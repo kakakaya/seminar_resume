@@ -1,0 +1,50 @@
+\documentclass[a4j,10pt]{jarticle}
+
+% title
+\makeatletter
+
+\def\problem#1{\def\@problem{#1}}
+\def\source_text#1{\def\@source_text{#1}}
+
+\def\@maketitle{
+\begin{flushleft}
+ {\Large\bf \@title \par}
+ {\@source_text \par}
+\end{flushleft}
+
+\begin{flushright}
+ \@date \par
+ 担当者: \@author 担当問題: \@problem \par
+\end{flushright}
+\par\vskip 1.5em
+}
+
+\makeatother
+
+% packages
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{listings,jlisting}
+\usepackage[dvipdfmx]{color}
+
+\lstset{%
+frame=single,
+stringstyle={\ttfamily \color[rgb]{0,0,1}},
+commentstyle={\itshape \color[cmyk]{1,0,1,0}},
+identifierstyle={\ttfamily},
+keywordstyle={\ttfamily \color[cmyk]{0,1,0,0}},
+basicstyle={\ttfamily},
+breaklines=true,
+xleftmargin=0zw,
+xrightmargin=0zw,
+framerule=.2pt,
+columns=[l]{fullflexible},
+numbers=left,
+stepnumber=1,
+numberstyle={\scriptsize},
+numbersep=1em,
+showstringspaces=\false,
+keepspaces=true,
+language={C},
+lineskip=-0.5zw,
+morecomment={[s][{\color[cmyk]{1,0,0,0}}]{/**}{*/}},
+}
