@@ -1,6 +1,6 @@
 Seminar Resume Template
 ====================
-これはmasawada氏作の[mics_report](https://github.com/masawada/mics_report)をベースにしています
+Basically modified from [mics_report](https://github.com/masawada/mics_report)
 
 # System requirements
 * Ruby >= 1.9.3
